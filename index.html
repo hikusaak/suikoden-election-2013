@@ -1,1 +1,538 @@
-Hello, 幻水総選挙2013 World!
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>幻水総選挙2013 集計結果｜【非公式】幻水総選挙</title>
+<meta name="description" content="##">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+<style>
+  :root {
+    --color-gry-01: #cbcbcb;
+    --color-gry-02: #e0e0e0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    width: min(700px, 100%);
+    margin: 0 auto;
+    padding: 3em 1em;
+    line-height: 1.58;
+    font-size: 16px;
+  }
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--color-gry-01);
+    border-right: 1px solid var(--color-gry-01);
+
+    dt, dd {
+      margin: 0;
+      padding: 0.5em 1em;
+      border-left: 1px solid var(--color-gry-01);
+      border-bottom: 1px solid var(--color-gry-01);
+    }
+    dt {
+      width: 15em;
+      background: var(--color-gry-02);
+    }
+    dd {
+      width: calc(100% - 15em);
+    }
+  }
+  form {
+    margin: 3em 0 1rem;
+    text-align: right;
+  }
+  .table-result {
+    width: 100%;
+
+    th[data-sort="rank"],
+    th[data-sort="votes"] {
+      width: 6em;
+    }
+    th[data-sort="character"] {
+      width: calc(100% - 12em);
+    }
+    th.sort {
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        content: "▲▼";
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        font-size: 0.75rem;
+        transform: translateY(-50%);
+      }
+
+      &.desc:after {
+        content: "▼";
+      }
+      &.asc:after {
+        content: "▲";
+      }
+    }
+  }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header__sitename">【非公式】幻水総選挙</div>
+</header>
+
+<main class="main">
+  <h1>幻水総選挙2013 集計結果</h1>
+  <dl>
+    <dt>投票受付期間</dt>
+    <dd>2013/5/31 21:00頃 ～ 2013/6/3 0:00</dd>
+    <dt>ハッシュタグ</dd>
+    <dd>#幻水総選挙</dd>
+    <dt>総投票数</dt>
+    <dd>1987票</dd>
+    <dt>投票されたキャラクター</dt>
+    <dd>415人（キャラ以外の項目を含む）</dd>
+  </dl>
+  <section class="sec">
+    <div id="table">
+      <form class="pure-form"><input type="search" class="search" placeholder="キーワード検索" /></form>
+      <table class="pure-table pure-table-horizontal table-result">
+        <thead>
+          <tr>
+            <th class="sort" data-sort="rank">順位</th>
+            <th class="sort" data-sort="votes">票数</th>
+            <th class="sort" data-sort="character">キャラクター</th>
+          </tr>
+        </thead>
+        <tbody class="list">
+          <tr><td class="rank">1</td><td class="votes">115</td><td class="character">1主人公（坊ちゃん）</td></tr>
+          <tr><td class="rank">2</td><td class="votes">96</td><td class="character">ルック</td></tr>
+          <tr><td class="rank">3</td><td class="votes">56</td><td class="character">テッド</td></tr>
+          <tr><td class="rank">4</td><td class="votes">53</td><td class="character">4主人公（4様）</td></tr>
+          <tr><td class="rank">5</td><td class="votes">40</td><td class="character">2主人公（2主）</td></tr>
+          <tr><td class="rank">6</td><td class="votes">39</td><td class="character">フリック</td></tr>
+          <tr><td class="rank">7</td><td class="votes">38</td><td class="character">ルカ・ブライト</td></tr>
+          <tr><td class="rank">8</td><td class="votes">37</td><td class="character">ビクトール</td></tr>
+          <tr><td class="rank">9</td><td class="votes">34</td><td class="character">ジョウイ・アトレイド（ブライト）</td></tr>
+          <tr><td class="rank">10</td><td class="votes">33</td><td class="character">グレミオ</td></tr>
+          <tr><td class="rank">11</td><td class="votes">32</td><td class="character">ササライ</td></tr>
+          <tr><td class="rank">12</td><td class="votes">29</td><td class="character">シエラ・ミケーネ</td></tr>
+          <tr><td class="rank">13</td><td class="votes">25</td><td class="character">ナッシュ・ラトキエ（クロービス）</td></tr>
+          <tr><td class="rank">14</td><td class="votes">24</td><td class="character">ゲオルグ・プライム</td></tr>
+          <tr><td class="rank">14</td><td class="votes">24</td><td class="character">シード</td></tr>
+          <tr><td class="rank">14</td><td class="votes">24</td><td class="character">フッチ</td></tr>
+          <tr><td class="rank">15</td><td class="votes">23</td><td class="character">キニスン</td></tr>
+          <tr><td class="rank">15</td><td class="votes">23</td><td class="character">ナナミ</td></tr>
+          <tr><td class="rank">16</td><td class="votes">22</td><td class="character">カイル</td></tr>
+          <tr><td class="rank">16</td><td class="votes">22</td><td class="character">シーナ</td></tr>
+          <tr><td class="rank">17</td><td class="votes">20</td><td class="character">シュウ</td></tr>
+          <tr><td class="rank">18</td><td class="votes">19</td><td class="character">クライブ</td></tr>
+          <tr><td class="rank">18</td><td class="votes">19</td><td class="character">スノウ・フィンガーフート</td></tr>
+          <tr><td class="rank">18</td><td class="votes">19</td><td class="character">ユーバー</td></tr>
+          <tr><td class="rank">19</td><td class="votes">16</td><td class="character">スタリオン</td></tr>
+          <tr><td class="rank">19</td><td class="votes">16</td><td class="character">マイクロトフ</td></tr>
+          <tr><td class="rank">19</td><td class="votes">16</td><td class="character">ロイ</td></tr>
+          <tr><td class="rank">20</td><td class="votes">15</td><td class="character">シーザー・シルバーバーグ</td></tr>
+          <tr><td class="rank">20</td><td class="votes">15</td><td class="character">ビッキー</td></tr>
+          <tr><td class="rank">20</td><td class="votes">15</td><td class="character">リヒャルト</td></tr>
+          <tr><td class="rank">21</td><td class="votes">14</td><td class="character">5主人公（王子）</td></tr>
+          <tr><td class="rank">21</td><td class="votes">14</td><td class="character">ヤム・クー</td></tr>
+          <tr><td class="rank">22</td><td class="votes">13</td><td class="character">カミュー</td></tr>
+          <tr><td class="rank">22</td><td class="votes">13</td><td class="character">クラウス</td></tr>
+          <tr><td class="rank">22</td><td class="votes">13</td><td class="character">ティアクライス主人公（団長）</td></tr>
+          <tr><td class="rank">23</td><td class="votes">12</td><td class="character">キカ</td></tr>
+          <tr><td class="rank">23</td><td class="votes">12</td><td class="character">セラ</td></tr>
+          <tr><td class="rank">23</td><td class="votes">12</td><td class="character">ヒューゴ</td></tr>
+          <tr><td class="rank">24</td><td class="votes">11</td><td class="character">キリル</td></tr>
+          <tr><td class="rank">24</td><td class="votes">11</td><td class="character">ジャック</td></tr>
+          <tr><td class="rank">25</td><td class="votes">10</td><td class="character">ゲド</td></tr>
+          <tr><td class="rank">25</td><td class="votes">10</td><td class="character">紡時主人公</td></tr>
+          <tr><td class="rank">25</td><td class="votes">10</td><td class="character">テンプルトン</td></tr>
+          <tr><td class="rank">25</td><td class="votes">10</td><td class="character">トーマス</td></tr>
+          <tr><td class="rank">25</td><td class="votes">10</td><td class="character">ラミン</td></tr>
+          <tr><td class="rank">25</td><td class="votes">10</td><td class="character">ロベルト</td></tr>
+          <tr><td class="rank">26</td><td class="votes">9</td><td class="character">オデッサ・シルバーバーグ</td></tr>
+          <tr><td class="rank">26</td><td class="votes">9</td><td class="character">クリス・ライトフェロー</td></tr>
+          <tr><td class="rank">26</td><td class="votes">9</td><td class="character">トルワド・アルブレク</td></tr>
+          <tr><td class="rank">26</td><td class="votes">9</td><td class="character">ハーヴェイ</td></tr>
+          <tr><td class="rank">26</td><td class="votes">9</td><td class="character">ミルイヒ・オッペンハイマー</td></tr>
+          <tr><td class="rank">27</td><td class="votes">8</td><td class="character">アスアド</td></tr>
+          <tr><td class="rank">27</td><td class="votes">8</td><td class="character">クルガン</td></tr>
+          <tr><td class="rank">27</td><td class="votes">8</td><td class="character">サスケ</td></tr>
+          <tr><td class="rank">27</td><td class="votes">8</td><td class="character">シグレ</td></tr>
+          <tr><td class="rank">27</td><td class="votes">8</td><td class="character">ゼフォン</td></tr>
+          <tr><td class="rank">27</td><td class="votes">8</td><td class="character">トロイ</td></tr>
+          <tr><td class="rank">27</td><td class="votes">8</td><td class="character">ベルクート</td></tr>
+          <tr><td class="rank">27</td><td class="votes">8</td><td class="character">レギウス</td></tr>
+          <tr><td class="rank">28</td><td class="votes">7</td><td class="character">アルベルト・シルバーバーグ</td></tr>
+          <tr><td class="rank">28</td><td class="votes">7</td><td class="character">シグルド</td></tr>
+          <tr><td class="rank">28</td><td class="votes">7</td><td class="character">ヘルムート</td></tr>
+          <tr><td class="rank">28</td><td class="votes">7</td><td class="character">ミアキス</td></tr>
+          <tr><td class="rank">28</td><td class="votes">7</td><td class="character">リウ・シエン</td></tr>
+          <tr><td class="rank">28</td><td class="votes">7</td><td class="character">リムスレーア・ファレナス</td></tr>
+          <tr><td class="rank">28</td><td class="votes">7</td><td class="character">ルビィ</td></tr>
+          <tr><td class="rank">29</td><td class="votes">6</td><td class="character">キルキス</td></tr>
+          <tr><td class="rank">29</td><td class="votes">6</td><td class="character">ザヴィド</td></tr>
+          <tr><td class="rank">29</td><td class="votes">6</td><td class="character">シメオン</td></tr>
+          <tr><td class="rank">29</td><td class="votes">6</td><td class="character">ビュクセ</td></tr>
+          <tr><td class="rank">29</td><td class="votes">6</td><td class="character">リュセリ</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">アルド</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">エルザ</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">カスミ</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">クレオ</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">ザムザ</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">ジェイル</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">シドニア</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">シュラ・ヴァルヤ</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">シロ</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">バレリア</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">フレデグンド</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">ポーラ</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">マッシュ・シルバーバーグ</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">マナリル</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">ムクムク</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">リオン</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">リッチモンド</td></tr>
+          <tr><td class="rank">30</td><td class="votes">5</td><td class="character">ワカバ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">アイリ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">アンネリー</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">エレノア・シルバーバーグ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">キバ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">クインシー</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">クロデキルド</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ゲンゲン</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ジェス</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ジェレミー</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">シド</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ジョー軍曹</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">シルビナ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ジル・ブライト</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ゼラセ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ソロン・ジー</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">タイ・ホー</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">チープー</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">チャコ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ツァウベルン</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ツヴァイク</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">デューカス</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ニナ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">パーシヴァル・フロイライン</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">バーツ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ハンフリー・ミンツ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ヒルダ</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">炎の英雄</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ヨベル</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ルクレティア・メルセス</td></tr>
+          <tr><td class="rank">31</td><td class="votes">4</td><td class="character">ルセリナ・バロウズ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">アイリーン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">アイン・ジード</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">アトリ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">アルシュタート・ファレナス</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ウィンドウ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">オウラン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">コーネル</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">サイリアーズ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ジーン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">シャムス</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">シャロン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ジョアン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">セシル</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">タージ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ダイアルフ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">タキ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ディアドラ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">テオ・マクドール</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">トラヴィス</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ナズ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ニック</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ヌムヌ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ノア</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ビャクレン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">フィッチャー</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">フェリド</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ブラックマン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">フレア</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">フレッド・マクシミリアン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">フワラフワル</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ペシュメルガ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ホウアン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">マリカ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ミズキ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ミューラー</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">メルヴィス</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">モーガン</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">リノ・エン・クルデス</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">レイチェル</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">レナ・スフィーナ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ロルフ</td></tr>
+          <tr><td class="rank">32</td><td class="votes">3</td><td class="character">ジンバ（ワイアット・ライトフェロー）</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">アップル</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">アナベル</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">イザベル</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ヴァンサン・ド・プール</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">エース</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">エッジ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">エルンスト</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">オボロ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">カーン</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">カシム・ハジル</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">カマンドール</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ギジェリガー</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ギゼル・ゴドウィン</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">キルケ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">キルデリク</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">グリフィス</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">クレイグ・ラーデン</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">グレンシール</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">クロミミ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ケネス</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">サギリ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">サロメ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">シャバック</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ジョーカー（ワン）</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ジョセフィーヌ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">シルヴァ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">スバル</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">スフィール</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">セネカ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ゼノア</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ソニア・シューレン</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">タル</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">チャンポ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ツァイ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">トウタ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ナディール</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ナルクル</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">パーン</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ハイ・ヨー</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">バズバ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ハスワール</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ハルト</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ビーアーガ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ヒックス</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">フーバー</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">フヨウ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">フランツ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ブランド</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ポール</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ボリス</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ミレイ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ミュラ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">メアメイ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ヤール</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ユイリ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ユージン</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ユン</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ヨシノ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ラマダ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">リィナ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">リキマル</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">リタ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ルオ・タウ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">レーヴン</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">レオン・シルバーバーグ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">レックナート</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">レネフェリアス13世</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">レレイ</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ロウエン</td></tr>
+          <tr><td class="rank">33</td><td class="votes">2</td><td class="character">ローレライ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">アーロン・バルカイ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">アグネス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">アメリア</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">アルバート</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">アレン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">アンダルク・ベルグマン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">イク</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">イクス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">イワノフ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ヴァズロフ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ヴィンセント・フィンガーフート</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ウィンディ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ヴォリガ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ウルダ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">エイダ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">エウスミール</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">エチエンヌ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">エドガー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">エリン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">オニール</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">オロク</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">カゲ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">カシオス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ガスパー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ガボチャ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">からくり丸</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ガンテツ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">キャザリー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ギョーム</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">キリィ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">キラウェア・シューレン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ギルバート</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">クイーン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">クーガ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">グランマイヤー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">グレンシール</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">グントラム</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ケイト</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ゲン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">コウュウ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">コルネリオ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">コロク</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">サーヴィラ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">サナ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">サナエ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">サルム・バロウズ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ジークフリード</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ジーノ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シグニイ・アルブレク</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シズ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シモーヌ・ベルドリッチ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シャイラ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シャドリ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シャボン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ジュエル</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シュトルテハイム・ラインバッハ3世</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シュン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シュンミン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ジョアンナ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ジョルジュ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">シロウ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">スウ・ジン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">星辰剣</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">セイラ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ゼガイ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">セドリック</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">セルマ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">セレン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ゼン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ソフィア</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">タガート</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">チャップマン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">チュカチャラ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ツェレンドラム</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ディオス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ディルク</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">テレーズ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">テンガアール</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">トーマ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ドガ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ドミンゲス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ドミンゲスJr</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">トモ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">トリスタン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ナタリー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ナレオ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ニコ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ニムニ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ネイラ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ネリス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ハーン・カニンガム</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">バジル</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">パブロ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">パム</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">バルカス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">バルバロッサ・ルーグナー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ハンナ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ヒクサク</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ヒナ・アウマクア</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">フー・タンチェン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ブートゥルーガ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">フウマ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ブライト</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ブラック</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">フリード・Y</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">フレイル</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">フレデリカ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ペック</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ベルナデット・イーガン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ボナパルト</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ボブ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ボルガン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ボルス・レッドラム</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">マークス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">マキシン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">マクシミリアン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">マティアス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">マリー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ミーナ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ミーネ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ミッキー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ミツバ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ミリー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ミュン・ツァン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ムバル</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ムラード</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">メグ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">メル</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">メルヴィル</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">モーリン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ユウ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ユーラム・バロウズ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ユズ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ユミィ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ヨラン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ラウド</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ラジム</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">リーリン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">リールン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">リイン・ペンネンバーグ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">リキュア</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">リドリー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">リュウカン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">リュキア</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ルイーズ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ルイス・キファーソン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ルバイス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ルビ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ルロラディア</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">レヴィ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">レオナ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">レスノウ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">レン・リイン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ロッテ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ロディ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ロドリク</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ロニー・ベル</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ロラン・レザウルス</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ワーン</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ワスタム</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">あひるさんたち</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">あるまじろん</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">カットバニー</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">騎士団コンビ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">コボルト村の村長</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ターゲットレディ</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ドレミの精</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ビーバーさんたち</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">ヘカトンケイル</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">フリードー家</td></tr>
+          <tr><td class="rank">34</td><td class="votes">1</td><td class="character">マクシミリアンズ</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      ※集計漏れ等もしありましたらすみません。<br>
+      ※外伝ナッシュと3ナッシュ、少年フッチと青年フッチのように複数作品に登場するキャラの区別はしていません。<br>
+      ※同じキャラへの複数投票は一票として数えさせて頂きました。
+    </p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__account">【企画主twitterID】<a href="https://x.com/gensosenkyo" target="_blank">@gensosenkyo</a></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+<script>
+  var options = { valueNames: ['rank', 'votes', 'character'] };
+  var userList = new List('table', options);
+  function filter(){
+    userList.filter();
+  }
+  filter();
+</script>
+</body>
+</html>
