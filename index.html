@@ -2,91 +2,38 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>幻水総選挙2013 集計結果｜【非公式】幻水総選挙</title>
-<meta name="description" content="##">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>集計結果｜【非公式】幻水総選挙2013</title>
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:url" content="https://suikoden-election-2013.pages.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="集計結果｜【非公式】幻水総選挙2013" />
+<meta property="og:description" content="幻水総選挙2013は、「幻想水滸伝シリーズ」のファン・有志による非公式の投票イベントです。既存の企業様、関係者様等とは一切関係ありません。" />
+<meta property="og:site_name" content="【非公式】幻水総選挙2013" />
+<meta property="og:image" content="https://suikoden-election-2013.pages.dev/2assets/css/ogp.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@gensosenkyo" />
+<meta name="twitter:title" content="集計結果｜【非公式】幻水総選挙2013" />
+<meta name="twitter:description" content="幻水総選挙2013は、「幻想水滸伝シリーズ」のファン・有志による非公式の投票イベントです。既存の企業様、関係者様等とは一切関係ありません。" />
+<link rel="icon" href="assets/img/favcon-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/favcon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="assets/img/favcon-180x180.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
-<style>
-  :root {
-    --color-gry-01: #cbcbcb;
-    --color-gry-02: #e0e0e0;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    width: min(700px, 100%);
-    margin: 0 auto;
-    padding: 3em 1em;
-    line-height: 1.58;
-    font-size: 16px;
-  }
-  dl {
-    display: flex;
-    flex-wrap: wrap;
-    border-top: 1px solid var(--color-gry-01);
-    border-right: 1px solid var(--color-gry-01);
-
-    dt, dd {
-      margin: 0;
-      padding: 0.5em 1em;
-      border-left: 1px solid var(--color-gry-01);
-      border-bottom: 1px solid var(--color-gry-01);
-    }
-    dt {
-      width: 15em;
-      background: var(--color-gry-02);
-    }
-    dd {
-      width: calc(100% - 15em);
-    }
-  }
-  form {
-    margin: 3em 0 1rem;
-    text-align: right;
-  }
-  .table-result {
-    width: 100%;
-
-    th[data-sort="rank"],
-    th[data-sort="votes"] {
-      width: 6em;
-    }
-    th[data-sort="character"] {
-      width: calc(100% - 12em);
-    }
-    th.sort {
-      position: relative;
-      cursor: pointer;
-
-      &::after {
-        content: "▲▼";
-        position: absolute;
-        top: 50%;
-        right: 1rem;
-        font-size: 0.75rem;
-        transform: translateY(-50%);
-      }
-
-      &.desc:after {
-        content: "▼";
-      }
-      &.asc:after {
-        content: "▲";
-      }
-    }
-  }
-</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/result.css">
 </head>
-<body>
+<body id="top">
 <header class="header">
-  <div class="header__sitename">【非公式】幻水総選挙</div>
+  <div class="header__sitename">【非公式】幻水総選挙2013</div>
 </header>
 
 <main class="main">
-  <h1>幻水総選挙2013 集計結果</h1>
-  <dl>
+  <h1>集計結果</h1>
+  <dl class="overview">
     <dt>投票受付期間</dt>
     <dd>2013/5/31 21:00頃 ～ 2013/6/3 0:00</dd>
     <dt>ハッシュタグ</dd>
@@ -98,8 +45,8 @@
   </dl>
   <section class="sec">
     <div id="table">
-      <form class="pure-form"><input type="search" class="search" placeholder="キーワード検索" /></form>
-      <table class="pure-table pure-table-horizontal table-result">
+      <form class="form pure-form"><input type="search" class="search" placeholder="キーワード検索" /></form>
+      <table class="table-result pure-table pure-table-horizontal">
         <thead>
           <tr>
             <th class="sort" data-sort="rank">順位</th>
@@ -522,17 +469,23 @@
 </main>
 
 <footer class="footer">
-  <div class="footer__account">【企画主twitterID】<a href="https://x.com/gensosenkyo" target="_blank">@gensosenkyo</a></div>
+  <div id="pagetop" class="footer__pagetop"><i class="fa-solid fa-angle-up"></i></div>
+  <p class="footer__about">幻水総選挙2013は、「幻想水滸伝シリーズ」のファン・有志による非公式の投票イベントです。既存の企業様、関係者様等とは一切関係ありません。</p>
+  <div class="footer__account">幻水総選挙（<a href="https://x.com/gensosenkyo" target="_blank">@gensosenkyo</a><i class="fa-solid fa-arrow-up-right-from-square"></i>）</div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+<script src="assets/js/tablesort.js"></script>
 <script>
-  var options = { valueNames: ['rank', 'votes', 'character'] };
-  var userList = new List('table', options);
-  function filter(){
-    userList.filter();
-  }
-  filter();
+  const btn = document.getElementById("pagetop");
+
+btn.addEventListener("click", () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
 </script>
 </body>
 </html>
