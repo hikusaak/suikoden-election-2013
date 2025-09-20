@@ -16,7 +16,7 @@ body {
   letter-spacing: 0.08em;
   color: var(--color-normal);
   font-size: 16px;
-  font-size: 400;
+  font-weight: 400;
   font-family: "Noto Sans JP", sans-serif;
   font-feature-settings: "palt";
 }
