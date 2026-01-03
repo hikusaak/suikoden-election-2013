@@ -25,6 +25,10 @@ body {
   padding: 1em;
   font-weight: 500;
   background: var(--color-gry-01);
+  .header__sitename {
+    margin: 0;
+    font-size: inherit;
+  }
 }
 .footer {
   padding: 1em 1em 2em;
@@ -52,8 +56,9 @@ body {
   width: min(920px, 100%);
   margin: 2em auto 5em;
 }
-h1 {
+h2 {
   margin-bottom: 1em;
+  font-size: 2em;
 }
 a {
   color: blue;
@@ -126,7 +131,7 @@ a + .fa-solid {
     background: var(--color-gry-01);
   }
 }
-#table + p {
+.text {
   font-size: 0.9em;
 }
 
